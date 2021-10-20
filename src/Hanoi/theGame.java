@@ -1,4 +1,7 @@
 package Hanoi;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 
 
@@ -11,10 +14,21 @@ public class theGame {
 
     //you just lost
     theGame() {
+
+        System.out.println("Today's time and date is: ");
+        System.out.println(new java.util.Date()); //print time and date for testing purposes.
+
         this.in = new Scanner(System.in);
         this.current = 1;
         System.out.println("Please enter the number of disks you'd like to use: ");
         this.n = in.nextInt();
+
+        if (n <= 0) { //test for entering number of disks
+            throw new IllegalArgumentException(
+                    "Disks cannot be less than 0."
+            );
+        }
+
         this.currentTower = 1;
         System.out.println("Please enter the number of towers you'd like to use (5-10): ");
         this.numTowers = in.nextInt();
@@ -29,7 +43,7 @@ public class theGame {
         }
         r = n;
 
-        hanoiStart(n, "towerOne", "towerTwo", "towerFour", "towerThree", "towerFive", this.current);
+        hanoiStart(n, "towerOne", "towerTwo", "towerFour", "towerThree", "towerFive", this.current); //start. five towers.
     }
 
     public void hanoiStart(int numOfDisks, String towerOne, String towerTwo, String towerFour, String towerThree, String towerFive, int current) {
@@ -96,9 +110,13 @@ public class theGame {
         }
         return this.current;
     }
-//print the movements to the console
+
+    //print the movements to the console
     public void move(int aDisk, String source, String dest, int currentStep) {
         System.out.println("Move " + this.current + ": Move disk " + aDisk + " from " + source + " to " + dest);
     }
+
+
+
 }
 
