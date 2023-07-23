@@ -11,5 +11,3 @@ but unfortunately it doesn't do anything to the program itself. So the game will
    - using an array of towers and manually entering up to ten towers. This is a semi-working solution but it would force me to write the recursion for every single tower input the 
    user asks for. I thought that would be an extremely poor way to write this and it forced the program to run into several errors as I tried to work through it. 
 
-With that being said, I hope the code I sent does a well enough job to show my working knowledge of programming. I am extremely excited to learn, and have been studying the Tower
-of Hanoi for two days extremely late into the night. I am a sponge and constantly eager to learn as much as I possibly can. 
