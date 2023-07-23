@@ -1,5 +1,4 @@
 # HanoiProjectOne
-Hey Jade! Thank you so much for the opportunity. 
 About this game: 
 1. You are able to enter as many disks as you'd like up to 40. 
 2. The game is initialized with five towers at the start.
